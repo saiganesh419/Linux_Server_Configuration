@@ -52,7 +52,7 @@ IaxPzjIQDFL3x1BiIzBbGwKf0yZQkCDtWilSl/6Urlu5p5gEQpjjYQ==
 ```
 ## Configuring Linux Server
 
-### Updating all packages
+### Updating all packages:
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -73,7 +73,7 @@ sudo apt-get upgrade
   ```
   This will grant sudo permission to grader.
 
-  ### Creating a ssh key pair for grader
+  ### Creating a ssh key pair for grader:
 
    On your local machine in terminal/command prompt type:
    ```
@@ -112,7 +112,7 @@ sudo apt-get upgrade
    ```
    ssh -i .ssh/id_rsa grader@ipaddress 
    ```
-  ### Changing the ssh port to 2200
+  ### Changing the ssh port to 2200:
    Type below command to change port 
    ```
    sudo nano /etc/ssh/sshd_config
@@ -139,7 +139,7 @@ sudo apt-get upgrade
   
   make change `PermitRootLogin no`
   
-  ### Configurating  Ufw firewall
+  ### Configurating  Ufw firewall:
   follow this commands:
   ```
   sudo ufw status
@@ -154,13 +154,13 @@ sudo apt-get upgrade
   ```
   It will display all allowed ports
   
-  ##% Changing time Zone:
+  ## Changing time Zone:
 
   `sudo dpkg-reconfigure tzdata`
   
   select none from list and then select utc.
   
-  ### Installing Apache2 
+  ### Installing Apache2 :
 
   In terminal type:
   
@@ -174,7 +174,7 @@ sudo apt-get upgrade
   
   ```sudo a2enmod wsgi ```
 
-  ## Setting up your flask application to work with apache2
+  ## Setting up your flask application to work with apache2:
 
    Deploying flask app with apache2 is referred from [Digital ocean](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
 
@@ -239,7 +239,7 @@ sudo apt-get upgrade
    
    Change the database connection in both db_setup.py and `__init__.py` as `engine =create_engine('postgresql://catalog:password@localhost/catalog')`
    
-  #### Configure and Enable a New Virtual Host
+  ## Configure and Enable a New Virtual Host:
    Type this command to config:
 
    `sudo nano /etc/apache2/sites-available/FlaskApp.conf`
