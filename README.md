@@ -50,15 +50,15 @@ IaxPzjIQDFL3x1BiIzBbGwKf0yZQkCDtWilSl/6Urlu5p5gEQpjjYQ==
 -----END RSA PRIVATE KEY-----
 
 ```
-### Configuring Linux Server
+## Configuring Linux Server
 
-## Updating all packages
+### Updating all packages
 ```
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
-## Creating grader User:
+### Creating grader User:
   create new user by following command:
   ```
   sudo adduser grader
@@ -73,7 +73,7 @@ sudo apt-get upgrade
   ```
   This will grant sudo permission to grader.
 
-  ## Creating a ssh key pair for grader
+  ### Creating a ssh key pair for grader
 
    On your local machine in terminal/command prompt type:
    ```
@@ -112,7 +112,7 @@ sudo apt-get upgrade
    ```
    ssh -i .ssh/id_rsa grader@ipaddress 
    ```
-  ## Changing the ssh port to 2200
+  ### Changing the ssh port to 2200
    Type below command to change port 
    ```
    sudo nano /etc/ssh/sshd_config
@@ -132,14 +132,14 @@ sudo apt-get upgrade
    ssh -i .ssh/id_rsa -p 2200 grader@youripaddress
    ```
    
-  #### Disabling ssh login as root:
+  ### Disabling ssh login as root:
   follow this commands:
 
   `sudo nano /etc/ssh/sshd_config`
   
   make change `PermitRootLogin no`
   
-  ## Configurating  Ufw firewall
+  ### Configurating  Ufw firewall
   follow this commands:
   ```
   sudo ufw status
@@ -154,13 +154,13 @@ sudo apt-get upgrade
   ```
   It will display all allowed ports
   
-  ## Changing time Zone:
+  ##% Changing time Zone:
 
   `sudo dpkg-reconfigure tzdata`
   
   select none from list and then select utc.
   
-  ## Installing Apache2 
+  ### Installing Apache2 
 
   In terminal type:
   
