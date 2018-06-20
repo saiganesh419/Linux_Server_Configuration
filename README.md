@@ -1,8 +1,8 @@
 # Linux_Server_Configuration
 
 ## Description
-   This project is about how to delpoy app lo linux server.
-
+   This is the final project for Udacity's Full Stack Web Developer Nanodegree.This is about linux server configuration
+   
 ### Server Details
 
 Server IP Address: 13.126.231.124
