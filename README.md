@@ -3,7 +3,7 @@
 ## Description
    This is the final project for Udacity's Full Stack Web Developer Nanodegree.This is about linux server configuration
    
-### Server Details
+### Server Details:
 
 Server IP Address: 13.126.231.124
 
